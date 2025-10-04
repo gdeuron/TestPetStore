@@ -69,3 +69,12 @@ def test_delete_pet(api_client):
 
     with allure.step("Проверка ответа"):
         assert response.status_code == 200
+
+@allure.feature("[api test] Получение питомца по его ID")
+@allure.story("Негативный тест")
+def test_get_pet_negative(api_client):
+    with allure.step("Отправить GET запрос"):
+        response = api_client.get(f"/pet/666666")
+
+    with allure.step("Проверка ответа"):
+        assert response.status_code == 404
