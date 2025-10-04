@@ -3,9 +3,9 @@ import pytest
 from utils.api_client import ApiClient
 
 BASE_URL = "https://petstore3.swagger.io/api/v3"
-pet_id = 77
-pet_name = "Barkley"
-pet_name_new = "Barbos"
+pet_id = 88
+pet_name = "Timber"
+pet_name_new = "Barkley"
 
 @pytest.fixture
 def api_client():
