@@ -5,7 +5,7 @@ from utils.api_client import ApiClient
 BASE_URL = "https://petstore3.swagger.io/api/v3"
 pet_id = 99
 pet_name = "Barkley"
-pet_name_new = "Barbos"
+pet_name_new = "Rocky"
 
 @pytest.fixture
 def api_client():
